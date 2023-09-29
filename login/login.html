@@ -2,18 +2,36 @@
 <html>
 <head>
     <title>Login Website Kalimantan Barat</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
 </head>
 <body>
     <header>
         <h1>Login</h1>
     </header>
     <nav>
-        <!-- Tambahkan navigasi ke halaman-halaman lain -->
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../history/history.html">History</a></li>
+                <li><a href="../ekonomi/ekonomi.html">Ekonomi</a></li>
+                <li><a href="../sosial/sosial.html">Sosial Budaya</a></li>
+                <li><a href="../wisata/wisata.html">Wisata</a></li>
+                <li><a href="../kuliner/kuliner.html">Kuliner</a></li>
+                <li><a href="../register/register.html">Register</a></li>
+            </ul>
+        </nav>
     <main>
-        <p>Ini adalah halaman Login Kalimantan Barat.</p>
-        <!-- Tambahkan konten Login di sini -->
+        <div id="login-form">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <button onclick="login()">Login</button>
+            </form>
+        </div>
     </main>
     <footer>
         <p>&copy; 2023 Website Kalimantan Barat</p>
