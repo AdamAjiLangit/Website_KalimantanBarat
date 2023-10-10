@@ -1,0 +1,3 @@
+function ChangePassword() {
+    alert("Oke");
+}
