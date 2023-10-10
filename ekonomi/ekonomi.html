@@ -1,31 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ekonomi Kalimantan Barat</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- custom css file link -->
     <link rel="stylesheet" href="ekonomi.css">
-    <script src="ekonomi.js"></script>
+
 </head>
 <body>
-    <header>
-        <h1>Ekonomi Kalimantan Barat</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Beranda</a></li>
-            <li><a href="../history/history.html">History</a></li>
-            <li><a href="../sosial/sosial.html">Sosial Budaya</a></li>
-            <li><a href="../wisata/wisata.html">Wisata</a></li>
-            <li><a href="../kuliner/kuliner.html">Kuliner</a></li>
-            <li><a href="../login/login.html">Login</a></li>
-            <li><a href="../register/register.html">Register</a></li>
-        </ul>
+   
+<!-- header section starts -->
+
+<header>
+
+     <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>Jelajah</span>Kalbar</a>
+
+    <nav class="navbar">
+        <a href="../index.html">Beranda</a>
+        <a href="../history/history.html">History</a>
+        <a href="../sosial/sosial.html">Sosial Budaya</a>
+        <a href="../wisata/wisata.html">Wisata</a>
+        <a href="../kuliner/kuliner.html">Kuliner</a>
     </nav>
-    <main>
-        <p>Ini adalah halaman Ekonomi Kalimantan Barat.</p>
-        <!-- Tambahkan konten ekonomi di sini -->
-    </main>
-    <footer>
-        <p>&copy; 2023 Website Kalimantan Barat</p>
-    </footer>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="../changesPass/changePass.html">click here</a></p>
+        <p>don't have and account? <a href="../register/register.html">register now</a></p>
+    </form>
+
+</div>
+
+
+
+<!-- footer section -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Kami membuat website ini sebagai bagian dari tugas PAS PKN kami. Tujuan kami adalah memperkenalkan Kalimantan Barat kepada dunia.</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="https://g.co/kgs/5ujXtQ">Pontianak, Kalimantan Barat</a>
+            <a href="https://g.co/kgs/6sXgLm">Singkawang, Kalimantan Barat</a>
+            <a href="https://g.co/kgs/wmR6Jt">Sintang, Kalimantan Barat</a>
+            <a href="https://g.co/kgs/SFyyuP">Ketapang, Kalimantan Barat</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="../index.html">Beranda</a>
+            <a href="../history/history.html">History</a>
+            <a href="../sosial/sosial.html">Sosial Budaya</a>
+            <a href="../wisata/wisata.html">Wisata</a>
+            <a href="../kuliner/kuliner.html">Kuliner</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/Kalbar.Berkibar/">facebook</a>
+            <a href="https://www.instagram.com/kalbar_info/">instagram</a>
+            <a href="https://www.youtube.com/channel/UCpUcQKq-fUauRezqZTvrcJA">youtube</a>
+            <a href="https://www.linkedin.com/in/kalbaronline/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=id">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit">&copy; 2023 Website Kalimantan Barat <span> JelajahKalbar </span> | all rights reserved!</h1>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- custom js file link -->
+<script src="ekonomi.js"></script>
+
 </body>
 </html>

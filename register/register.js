@@ -1,3 +1,3 @@
 function register() {
-    // Logika registrasi di sini
+    alert("Oke");
 }
