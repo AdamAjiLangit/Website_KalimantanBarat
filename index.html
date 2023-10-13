@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,387 +11,111 @@
 
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
+
     <!-- custom css file link -->
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-   
-<!-- header section starts -->
 
-<header>
+    <!-- header section starts -->
 
-     <div id="menu-bar" class="fas fa-bars"></div>
+    <header>
 
-    <a href="#" class="logo"><span>Jelajah</span>Kalbar</a>
+        <div id="menu-bar" class="fas fa-bars"></div>
 
-    <nav class="navbar">
-            <a href="../history/history.html">History</a>
+        <a href="#" class="logo"><span>Jelajah</span>Kalbar</a>
+
+        <nav class="navbar">
+            <a href="../history/">History</a>
             <a href="../ekonomi/ekonomi.html">Ekonomi</a>
             <a href="../sosial/sosial.html">Sosial Budaya</a>
             <a href="../wisata/wisata.html">Wisata</a>
             <a href="../kuliner/kuliner.html">Kuliner</a>
-    </nav>
+        </nav>
 
-    <div class="icons">
-        <i class="fas fa-search" id="search-btn"></i>
-        <i class="fas fa-user" id="login-btn"></i>
-    </div>
-
-    <form action="" class="search-bar-container">
-        <input type="search" id="search-bar" placeholder="search here...">
-        <label for="search-bar" class="fas fa-search"></label>
-    </form>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- login form container -->
-
-<div class="login-form-container">
-
-    <i class="fas fa-times" id="form-close"></i>
-
-    <form action="">
-        <h3>login</h3>
-        <input type="email" class="box" placeholder="enter your email">
-        <input type="password" class="box" placeholder="enter your password">
-        <input type="submit" value="login now" class="btn">
-        <input type="checkbox" id="remember">
-        <label for="remember">remember me</label>
-        <p>forget password? <a href="../changesPass/changePass.html">click here</a></p>
-        <p>don't have and account? <a href="../register/register.html">register now</a></p>
-    </form>
-
-</div>
-
-<!-- home section starts -->
-
-<section class="home" id="home">
-
-    <div class="content">
-        <h3>Selamat datang di website Kalimantan Barat. </h3>
-        <p>Temukan informasi menarik tentang sejarah, ekonomi, budaya, wisata, dan kuliner daerah.</p>
-        <a href="#" class="btn">discover more</a>
-    </div>
-
-    <div class="controls">
-        <span class="vid-btn active" data-scr="#"></span>
-        <span class="vid-btn" data-scr="#"></span>
-        <span class="vid-btn" data-scr="#"></span>
-        <span class="vid-btn" data-scr="#"></span>
-        <span class="vid-btn" data-scr="#"></span>
-    </div>
-
-    <div class="video-container">
-        <video src="#" id="video-slider" loop autoplay muted></video>
-    </div>
-
-</section>
-
-<!-- home section ends -->
-
-<!-- packages section starts -->
-
-<section class="packages" id="packages">
-
-    <h1 class="heading">
-        <span>p</span>
-        <span>a</span>
-        <span>c</span>
-        <span>k</span>
-        <span>a</span>
-        <span>g</span>
-        <span>e</span>
-        <span>s</span>
-    </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="../images/danau_sentarum.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Danau Sentarum </h3>
-                <p>Danau Sentarum adalah danau musiman yang indah dan berada di Kapuas Hulu, Kalimantan Barat.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <a href="../wisata/wisata.html#1" class="btn">see now</a>
-            </div>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
         </div>
 
-        <div class="box">
-            <img src="../images/gunung_palung_national.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Gunung Palung National Park </h3>
-                <p>Taman Nasional Gunung Palung (TNGP) terletak di Kab Kayong Utara dan Kab Ketapang, Kalimantan Barat.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <a href="../wisata/wisata.html#4" class="btn">see now</a>
-            </div>
-        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
 
-        <div class="box">
-            <img src="../images/mimi_land_batu_payung.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Mimi Land Batu Payung </h3>
-                <p>Mimi Land Beach terletak di Karimunting, Sungai Raya Kepulauan, Kabupaten Bengkayang, Kalimantan Barat.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <a href="../wisata/wisata.html#5" class="btn">see now</a>
-            </div>
-        </div>
+    </header>
 
-        <div class="box">
-            <img src="../images/bukit_kelam.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Bukit Kelam </h3>
-                <p>Gunung Kelam adalah gunung yang yang sangat indah dan terletak di Kalimantan Barat.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <a href="../wisata/wisata.html#7" class="btn">see now</a>
-            </div>
-        </div>
+    <!-- header section ends -->
 
-        <div class="box">
-            <img src="../images/pulau_randayan.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Pulau Randayan </h3>
-                <p>Pulau Randayan adalah pulau yang terletak di sebelah utara daerah pesisir Kalimantan Barat.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <a href="../wisata/wisata.html#9" class="btn">see now</a>
-            </div>
-        </div>
+    <!-- login form container -->
 
-        <div class="box">
-            <img src="../images/pantai_tanjung_bajau.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Pantai Tanjung Bajau </h3>
-                <p>Tanjung Bajau atau biasa disebut Rindu alam ini terletak diantara Gunung Bajau, Gunung kota dan Gunung Pelapis di Kota Singkawang.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <a href="../wisata/wisata.html#10" class="btn">see now</a>
-            </div>
-        </div>
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="../changesPass/changePass.html">click here</a></p>
+            <p>don't have and account? <a href="../register/register.html">register now</a></p>
+        </form>
 
     </div>
 
-</section>    
+    <!-- home section starts -->
 
-<!-- packages section ends -->
+    <section class="home" id="home">
 
-<!-- services section starts -->
-
-<section class="services" id="services">
-
-    <h1 class="heading">
-        <span>s</span>
-        <span>e</span>
-        <span>r</span>
-        <span>v</span>
-        <span>i</span>
-        <span>c</span>
-        <span>e</span>
-        <span>s</span>
-    </h1>
-
-    <div class="box-container">
-        
-        <div class="box">
-            <i class="fas fa-hotel"></i>
-            <h3>affordable hotels</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Ducimus veritatis sit nostrum expedita deleniti suscipit odio officia blanditiis rerum nisi.</p>
-        </div>
-        <div class="box">
-            <i class="fas fa-utensils"></i>
-            <h3>food and drinks</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Ducimus veritatis sit nostrum expedita deleniti suscipit odio officia blanditiis rerum nisi.</p>
-        </div>
-        <div class="box">
-            <i class="fas fa-bullhorn"></i>
-            <h3>safty guide</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Ducimus veritatis sit nostrum expedita deleniti suscipit odio officia blanditiis rerum nisi.</p>
-        </div>
-        <div class="box">
-            <i class="fas fa-globe-asia"></i>
-            <h3>around the world</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Ducimus veritatis sit nostrum expedita deleniti suscipit odio officia blanditiis rerum nisi.</p>
-        </div>
-        <div class="box">
-            <i class="fas fa-plane"></i>
-            <h3>fastest travel</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Ducimus veritatis sit nostrum expedita deleniti suscipit odio officia blanditiis rerum nisi.</p>
-        </div>
-        <div class="box">
-            <i class="fas fa-hiking"></i>
-            <h3>adventures</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Ducimus veritatis sit nostrum expedita deleniti suscipit odio officia blanditiis rerum nisi.</p>
+        <div class="content">
+            <h3>Selamat datang di website Kalimantan Barat. </h3>
+            <p>Temukan informasi menarik tentang sejarah, ekonomi, budaya, wisata, dan kuliner daerah.</p>
+            <a href="#" class="btn">discover more</a>
         </div>
 
-    </div>
-
-</section>    
-
-<!-- services section ends -->
-
-<!-- gallery section starts -->
-
-<section class="gallery" id="gallery">
-
-    <h1 class="heading">
-        <span>g</span>
-        <span>a</span>
-        <span>l</span>
-        <span>l</span>
-        <span>e</span>
-        <span>r</span>
-        <span>y</span>
-    </h1>
-
-    <div class="box-container">
-        
-        <div class="box">
-            <img src="#" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="#" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="#" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="#" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="#" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="#" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="#" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="#" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
-                <a href="#" class="btn">see more</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="#" alt="">
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
-                <a href="#" class="btn">see more</a>
-            </div>
+        <div class="controls">
+            <span class="vid-btn active" data-scr="#"></span>
+            <span class="vid-btn" data-scr="#"></span>
+            <span class="vid-btn" data-scr="#"></span>
+            <span class="vid-btn" data-scr="#"></span>
+            <span class="vid-btn" data-scr="#"></span>
         </div>
 
-    </div>
+        <div class="video-container">
+            <video src="#" id="video-slider" loop autoplay muted></video>
+        </div>
 
-</section>    
+    </section>
 
-<!-- gallery section ends -->
+    <!-- home section ends -->
 
-<!-- review section starts -->
+    <!-- packages section starts -->
 
-<section class="review" id="review">
+    <section class="packages" id="packages">
 
-    <h1 class="heading">
-        <span>r</span>
-        <span>e</span>
-        <span>v</span>
-        <span>i</span>
-        <span>e</span>
-        <span>w</span>
-    </h1>
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
 
-    <div class="swiper-container review-slider">
-        
-        <div class="swiper-wrapper">
+        <div class="box-container">
 
-            <div class="swiper-slider">
-                <div class="box">
-                    <img src="../images/user.png" alt="">
-                    <h3>SkyPoo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Rem distinctio tempore voluptatibus sed facere velit quaerat similique, 
-                    deleniti blanditiis dignissimos asperiores dolores alias unde consectetur. 
-                    Debitis ullam deserunt ea nostrum.</p>
+            <div class="box">
+                <img src="../images/danau_sentarum.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Danau Sentarum </h3>
+                    <p>Danau Sentarum adalah danau musiman yang indah dan berada di Kapuas Hulu, Kalimantan Barat.</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -398,16 +123,15 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
+                    <a href="../wisata/wisata.html#1" class="btn">see now</a>
                 </div>
             </div>
-            <div class="swiper-slider">
-                <div class="box">
-                    <img src="../images/user.png" alt="">
-                    <h3>Adam Aji</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Rem distinctio tempore voluptatibus sed facere velit quaerat similique, 
-                    deleniti blanditiis dignissimos asperiores dolores alias unde consectetur. 
-                    Debitis ullam deserunt ea nostrum.</p>
+
+            <div class="box">
+                <img src="../images/gunung_palung_national.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Gunung Palung National Park </h3>
+                    <p>Taman Nasional Gunung Palung (TNGP) terletak di Kab Kayong Utara dan Kab Ketapang, Kalimantan Barat.</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -415,16 +139,15 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
+                    <a href="../wisata/wisata.html#4" class="btn">see now</a>
                 </div>
             </div>
-            <div class="swiper-slider">
-                <div class="box">
-                    <img src="../images/user.png" alt="">
-                    <h3>Barata Wijaya</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Rem distinctio tempore voluptatibus sed facere velit quaerat similique, 
-                    deleniti blanditiis dignissimos asperiores dolores alias unde consectetur. 
-                    Debitis ullam deserunt ea nostrum.</p>
+
+            <div class="box">
+                <img src="../images/mimi_land_batu_payung.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Mimi Land Batu Payung </h3>
+                    <p>Mimi Land Beach terletak di Karimunting, Sungai Raya Kepulauan, Kabupaten Bengkayang, Kalimantan Barat.</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -432,16 +155,15 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
+                    <a href="../wisata/wisata.html#5" class="btn">see now</a>
                 </div>
             </div>
-            <div class="swiper-slider">
-                <div class="box">
-                    <img src="../images/user.png" alt="">
-                    <h3>Moch Siril</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Rem distinctio tempore voluptatibus sed facere velit quaerat similique, 
-                    deleniti blanditiis dignissimos asperiores dolores alias unde consectetur. 
-                    Debitis ullam deserunt ea nostrum.</p>
+
+            <div class="box">
+                <img src="../images/bukit_kelam.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Bukit Kelam </h3>
+                    <p>Gunung Kelam adalah gunung yang yang sangat indah dan terletak di Kalimantan Barat.</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -449,60 +171,327 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
+                    <a href="../wisata/wisata.html#7" class="btn">see now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../images/pulau_randayan.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Pulau Randayan </h3>
+                    <p>Pulau Randayan adalah pulau yang terletak di sebelah utara daerah pesisir Kalimantan Barat.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="../wisata/wisata.html#9" class="btn">see now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../images/pantai_tanjung_bajau.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Pantai Tanjung Bajau </h3>
+                    <p>Tanjung Bajau atau biasa disebut Rindu alam ini terletak diantara Gunung Bajau, Gunung kota dan Gunung Pelapis di Kota Singkawang.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="../wisata/wisata.html#10" class="btn">see now</a>
                 </div>
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>    
+    <!-- packages section ends -->
 
-<!-- review section ends -->
+    <!-- services section starts -->
 
-<!-- footer section -->
+    <section class="services" id="services">
 
-<section class="footer">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
 
-    <div class="box-container">
+        <div class="box-container">
 
-        <div class="box">
-            <h3>about us</h3>
-            <p>Kami membuat website ini sebagai bagian dari tugas PAS PKN kami. Tujuan kami adalah memperkenalkan Kalimantan Barat kepada dunia.</p>
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus veritatis sit nostrum expedita deleniti suscipit odio officia blanditiis rerum nisi.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus veritatis sit nostrum expedita deleniti suscipit odio officia blanditiis rerum nisi.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safty guide</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus veritatis sit nostrum expedita deleniti suscipit odio officia blanditiis rerum nisi.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus veritatis sit nostrum expedita deleniti suscipit odio officia blanditiis rerum nisi.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus veritatis sit nostrum expedita deleniti suscipit odio officia blanditiis rerum nisi.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>adventures</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus veritatis sit nostrum expedita deleniti suscipit odio officia blanditiis rerum nisi.</p>
+            </div>
+
         </div>
-        <div class="box">
-            <h3>branch locations</h3>
-            <a href="https://g.co/kgs/5ujXtQ">Pontianak, Kalimantan Barat</a>
-            <a href="https://g.co/kgs/6sXgLm">Singkawang, Kalimantan Barat</a>
-            <a href="https://g.co/kgs/wmR6Jt">Sintang, Kalimantan Barat</a>
-            <a href="https://g.co/kgs/SFyyuP">Ketapang, Kalimantan Barat</a>
+
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- gallery section starts -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="#" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="#" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="#" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="#" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="#" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="#" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="#" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="#" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="#" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor?</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+
         </div>
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="../history/history.html">History</a>
-            <a href="../ekonomi/ekonomi.html">Ekonomi</a>
-            <a href="../sosial/sosial.html">Sosial Budaya</a>
-            <a href="../wisata/wisata.html">Wisata</a>
-            <a href="../kuliner/kuliner.html">Kuliner</a>
+
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!-- review section starts -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+
+        <div class="swiper-container review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slider">
+                    <div class="box">
+                        <img src="../images/user.png" alt="">
+                        <h3>SkyPoo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem distinctio tempore voluptatibus sed facere velit quaerat similique, deleniti blanditiis dignissimos asperiores dolores alias unde consectetur. Debitis ullam deserunt
+                            ea nostrum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slider">
+                    <div class="box">
+                        <img src="../images/user.png" alt="">
+                        <h3>Adam Aji</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem distinctio tempore voluptatibus sed facere velit quaerat similique, deleniti blanditiis dignissimos asperiores dolores alias unde consectetur. Debitis ullam deserunt
+                            ea nostrum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slider">
+                    <div class="box">
+                        <img src="../images/user.png" alt="">
+                        <h3>Barata Wijaya</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem distinctio tempore voluptatibus sed facere velit quaerat similique, deleniti blanditiis dignissimos asperiores dolores alias unde consectetur. Debitis ullam deserunt
+                            ea nostrum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slider">
+                    <div class="box">
+                        <img src="../images/user.png" alt="">
+                        <h3>Moch Siril</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem distinctio tempore voluptatibus sed facere velit quaerat similique, deleniti blanditiis dignissimos asperiores dolores alias unde consectetur. Debitis ullam deserunt
+                            ea nostrum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="https://www.facebook.com/Kalbar.Berkibar/">facebook</a>
-            <a href="https://www.instagram.com/kalbar_info/">instagram</a>
-            <a href="https://www.youtube.com/channel/UCpUcQKq-fUauRezqZTvrcJA">youtube</a>
-            <a href="https://www.linkedin.com/in/kalbaronline/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=id">linkedin</a>
+
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- footer section -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>Kami membuat website ini sebagai bagian dari tugas PAS PKN kami. Tujuan kami adalah memperkenalkan Kalimantan Barat kepada dunia.</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="https://g.co/kgs/5ujXtQ">Pontianak, Kalimantan Barat</a>
+                <a href="https://g.co/kgs/6sXgLm">Singkawang, Kalimantan Barat</a>
+                <a href="https://g.co/kgs/wmR6Jt">Sintang, Kalimantan Barat</a>
+                <a href="https://g.co/kgs/SFyyuP">Ketapang, Kalimantan Barat</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="../history/history.html">History</a>
+                <a href="../ekonomi/ekonomi.html">Ekonomi</a>
+                <a href="../sosial/sosial.html">Sosial Budaya</a>
+                <a href="../wisata/wisata.html">Wisata</a>
+                <a href="../kuliner/kuliner.html">Kuliner</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/Kalbar.Berkibar/">facebook</a>
+                <a href="https://www.instagram.com/kalbar_info/">instagram</a>
+                <a href="https://www.youtube.com/channel/UCpUcQKq-fUauRezqZTvrcJA">youtube</a>
+                <a href="https://www.linkedin.com/in/kalbaronline/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=id">linkedin</a>
+            </div>
+
         </div>
 
-    </div>
+        <h1 class="credit">&copy; 2023 Website Kalimantan Barat <span> JelajahKalbar </span> | all rights reserved!</h1>
 
-    <h1 class="credit">&copy; 2023 Website Kalimantan Barat <span> JelajahKalbar </span> | all rights reserved!</h1>
+    </section>
 
-</section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-<!-- custom js file link -->
-<script src="script.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
 
 </body>
+
 </html>
