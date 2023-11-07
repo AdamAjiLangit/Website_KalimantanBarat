@@ -248,7 +248,7 @@ header .search-bar-container label:hover {
 
 .banner {
     min-height: 80vh;
-    background: url(../images/banner.png) no-repeat;
+    background: url(/images/banner.png) no-repeat;
     background-size: cover;
     background-position: center;
     display: grid;
@@ -326,6 +326,12 @@ header .search-bar-container label:hover {
     padding-top: 1.5rem;
     display: flex;
     align-items: center;
+}
+
+.container .posts-container .stars i {
+    margin-top: 9px;
+    color: var(--orange);
+    font-size: 1.7rem;
 }
 
 .container .posts-container .links .user {
@@ -488,6 +494,19 @@ header .search-bar-container label:hover {
     background: var(--black);
     color: #fff;
 }
+
+
+#upArrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
 
 .footer {
     background: #333;

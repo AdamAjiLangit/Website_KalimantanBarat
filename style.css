@@ -1,41 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
-:root{
-    --orange:#ffa500;
+:root {
+    --orange: #ffa500;
+
+    --header-height: 3rem;
+
+    /*========== Colors ==========*/
+    /* Change favorite color to match images */
+    /*Green dark 190 - Green 171 - Grren Blue 200*/
+    --hue-color: 190;
+
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color), 64%, 22%);
+    --first-color-second: hsl(var(--hue-color), 64%, 22%);
+    --first-color-alt: hsl(var(--hue-color), 64%, 15%);
+    --title-color: hsl(var(--hue-color), 64%, 18%);
+    --text-color: hsl(var(--hue-color), 24%, 35%);
+    --text-color-light: hsl(var(--hue-color), 8%, 60%);
+    --input-color: hsl(var(--hue-color), 24%, 97%);
+    --body-color: hsl(var(--hue-color), 100%, 99%);
+    --white-color: #FFF;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Open Sans', sans-serif;
+    --title-font: 'Raleway', sans-serif;
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margenes Bottom ==========*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-25: 1.25rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+    /*========== Hover overlay ==========*/
+    --img-transition: .3s;
+    --img-hidden: hidden;
+    --img-scale: scale(1.1);
 }
 
-*{
+* {
     font-family: 'Nunito', sans-serif;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-transform: capitalize;
-    outline: none; border: none;
+    outline: none;
+    border: none;
     text-decoration: none;
     transition: all .2s linear;
 }
 
-*::selection{
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+    padding: 2rem 9%;
+}
+
+.section__title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: var(--mb-2);
+}
+
+.container {
+    max-width: 968px;
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+*::selection {
     background: var(--orange);
     color: #fff;
 }
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 6rem;
     scroll-behavior: smooth;
 }
 
-section{
+section {
     padding: 2rem 9%;
 }
 
-.heading{
+.heading {
     text-align: center;
     padding: 2.5rem 0;
 }
 
-.heading span{
+.heading span {
     font-size: 3.5rem;
     background: rgba(255, 165, 0, .2);
     color: var(--orange);
@@ -43,11 +123,11 @@ section{
     padding: .2rem 1rem;
 }
 
-.heading span.space{
+.heading span.space {
     background: none;
 }
 
-.btn{
+.btn {
     display: inline-block;
     margin-top: 1rem;
     background: var(--orange);
@@ -58,14 +138,16 @@ section{
     font-size: 1.7rem;
 }
 
-.btn:hover{
+.btn:hover {
     background: rgba(255, 165, 0, .2);
     color: var(--orange);
 }
 
-header{
+header {
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     background: #333;
     z-index: 1000;
     display: flex;
@@ -74,41 +156,43 @@ header{
     padding: 2rem 9%;
 }
 
-header .logo{
+header .logo {
     font-size: 2.5rem;
     font-weight: bolder;
     color: #fff;
     text-transform: uppercase;
 }
 
-header .logo span{
+header .logo span {
     color: var(--orange);
 }
 
-header .navbar a{
+header .navbar a {
     color: #fff;
     font-size: 2rem;
     margin: 0 .8rem;
 }
 
-header .navbar a:hover{
+header .navbar a:hover {
     color: var(--orange);
 }
 
-header .icons i{
+header .icons i {
     font-size: 2.5rem;
     color: #fff;
     cursor: pointer;
     margin-right: 2rem;
 }
 
-header .icons i:hover{
+header .icons i:hover {
     color: var(--orange);
 }
 
-header .search-bar-container{
+header .search-bar-container {
     position: absolute;
-    top: 100%; left: 0; right: 0;
+    top: 100%;
+    left: 0;
+    right: 0;
     padding: 1.5rem 2rem;
     background: #333;
     border-top: .1rem solid rgba(255, 255, 255, .2);
@@ -118,11 +202,11 @@ header .search-bar-container{
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
-header .search-bar-container.active{
+header .search-bar-container.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-header .search-bar-container #search-bar{
+header .search-bar-container #search-bar {
     width: 100%;
     padding: 1rem;
     text-transform: none;
@@ -131,20 +215,21 @@ header .search-bar-container #search-bar{
     border-radius: .5rem;
 }
 
-header .search-bar-container label{
+header .search-bar-container label {
     color: #fff;
     cursor: pointer;
     font-size: 3rem;
     margin-left: 1.5rem;
 }
 
-header .search-bar-container label:hover{
+header .search-bar-container label:hover {
     color: var(--orange);
 }
 
-.login-form-container{
+.login-form-container {
     position: fixed;
-    top: -120%; left: 0;
+    top: -120%;
+    left: 0;
     z-index: 10000;
     min-height: 100vh;
     width: 100%;
@@ -154,11 +239,11 @@ header .search-bar-container label:hover{
     justify-content: center;
 }
 
-.login-form-container.active{
+.login-form-container.active {
     top: 0;
 }
 
-.login-form-container form{
+.login-form-container form {
     margin: 2rem;
     padding: 1.5rem 2rem;
     border-radius: .5rem;
@@ -166,7 +251,7 @@ header .search-bar-container label:hover{
     width: 50rem;
 }
 
-.login-form-container form h3{
+.login-form-container form h3 {
     font-size: 3rem;
     color: #444;
     text-transform: uppercase;
@@ -174,7 +259,7 @@ header .search-bar-container label:hover{
     padding: 1rem 0;
 }
 
-.login-form-container form .box{
+.login-form-container form .box {
     width: 100%;
     padding: 1rem;
     font-size: 1.7rem;
@@ -184,57 +269,58 @@ header .search-bar-container label:hover{
     text-transform: none;
 }
 
-.login-form-container form .box:focus{
+.login-form-container form .box:focus {
     border-color: var(--orange);
 }
 
-.login-form-container form #remember{
+.login-form-container form #remember {
     margin: 2rem 0;
 }
 
-.login-form-container form label{
+.login-form-container form label {
     font-size: 1.5rem;
 }
 
-.login-form-container form .btn{
+.login-form-container form .btn {
     display: block;
     width: 100%;
 }
 
-.login-form-container form p{
+.login-form-container form p {
     padding: .5rem 0;
     font-size: 1.5rem;
     color: #666;
 }
 
-.login-form-container form p a{
+.login-form-container form p a {
     color: var(--orange);
 }
 
-.login-form-container form p a:hover{
+.login-form-container form p a:hover {
     color: #333;
     text-decoration: underline;
 }
 
-.login-form-container #form-close{
+.login-form-container #form-close {
     position: absolute;
-    top: 2rem; right: 3rem;
+    top: 2rem;
+    right: 3rem;
     font-size: 5rem;
     color: #fff;
     cursor: pointer;
 }
 
-#menu-bar{
-     color: #fff;
-     border: .1rem solid #fff;
-     border-radius: .5rem;
-     font-size: 3rem;
-     padding: .5rem 1.2rem;
-     cursor: pointer;
-     display: none;
+#menu-bar {
+    color: #fff;
+    border: .1rem solid #fff;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
 }
 
-.home{
+.home {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -244,33 +330,34 @@ header .search-bar-container label:hover{
     z-index: 0;
 }
 
-.home .content{
+.home .content {
     text-align: center;
 }
 
-.home .content h3{
+.home .content h3 {
     font-size: 4.5rem;
     color: #fff;
     text-transform: uppercase;
     text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .1);
 }
 
-.home .content p{
+.home .content p {
     font-size: 2.5rem;
     color: #fff;
     padding: .5rem 0;
 }
 
-.home .video-container video{
+.home .video-container video {
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     z-index: -1;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.home .controls{
+.home .controls {
     padding: 1rem;
     border-radius: 5rem;
     background: rgba(0, 0, 0, .7);
@@ -278,7 +365,7 @@ header .search-bar-container label:hover{
     top: 10rem;
 }
 
-.home .controls .vid-btn{
+.home .controls .vid-btn {
     height: 2rem;
     width: 2rem;
     display: inline-block;
@@ -288,94 +375,94 @@ header .search-bar-container label:hover{
     margin: 0 .5rem;
 }
 
-.home .controls .vid-btn.active{
+.home .controls .vid-btn.active {
     background: var(--orange);
 }
 
-.packages .box-container{
+.packages .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
-.packages .box-container .box{
+.packages .box-container .box {
     flex: 1 1 30rem;
     border-radius: .5rem;
     overflow: hidden;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
 }
 
-.packages .box-container .box img{
+.packages .box-container .box img {
     height: 25rem;
     width: 100%;
     object-fit: cover;
 }
 
-.packages .box-container .box .content{
+.packages .box-container .box .content {
     padding: 2rem;
 }
 
-.packages .box-container .box .content h3{
+.packages .box-container .box .content h3 {
     font-size: 2rem;
     color: #333;
 }
 
-.packages .box-container .box .content h3 i{
+.packages .box-container .box .content h3 i {
     color: var(--orange);
 }
 
-.packages .box-container .box .content p{
+.packages .box-container .box .content p {
     font-size: 1.7rem;
     color: #666;
     padding: 1rem 0;
 }
 
-.packages .box-container .box .content .stars i{
+.packages .box-container .box .content .stars i {
     font-size: 1.7rem;
     color: var(--orange);
 }
 
-.services .box-container{
+.services .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.services .box-container .box{
+.services .box-container .box {
     flex: 1 1 30rem;
     border-radius: .5rem;
     padding: 1rem;
     text-align: center;
 }
 
-.services .box-container .box i{
+.services .box-container .box i {
     padding: 1rem;
     font-size: 5rem;
     color: var(--orange);
 }
 
-.services .box-container .box h3{
+.services .box-container .box h3 {
     font-size: 2.5rem;
     color: #333;
 }
 
-.services .box-container .box p{
+.services .box-container .box p {
     font-size: 1.5rem;
     color: #666;
     padding: 1rem 0;
 }
 
-.services .box-container .box:hover{
+.services .box-container .box:hover {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
 }
 
-.gallery .box-container{
+.gallery .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.gallery .box-container .box{
+.gallery .box-container .box {
     overflow: hidden;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
     border: 1rem solid #fff;
@@ -385,15 +472,16 @@ header .search-bar-container label:hover{
     position: relative;
 }
 
-.gallery .box-container .box img{
+.gallery .box-container .box img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.gallery .box-container .box .content{
+.gallery .box-container .box .content {
     position: absolute;
-    top: -100%; left: 0;
+    top: -100%;
+    left: 0;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -402,33 +490,78 @@ header .search-bar-container label:hover{
     padding-top: 5rem;
 }
 
-.gallery .box-container .box:hover .content{
+.gallery .box-container .box:hover .content {
     top: 0;
 }
 
-.gallery .box-container .box .content h3{
+.gallery .box-container .box .content h3 {
     font-size: 2.5rem;
     color: var(--orange);
 }
 
-.gallery .box-container .box .content p{
+.gallery .box-container .box .content p {
     font-size: 1.5rem;
     color: #eee;
     padding: .5rem 0;
 }
 
-.review .review-slider{
+/*=============== DISCOVER ===============*/
+
+.discover__card {
+    position: relative;
+    width: 200px;
+    overflow: var(--img-hidden);
+}
+
+.discover__data {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1rem;
+}
+
+.discover__title,
+.discover__description {
+    color: var(--white-color);
+}
+
+.discover__title {
+    color: white;
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.discover__description {
+    color: white;
+    display: block;
+    font-size: var(--smaller-font-size);
+}
+
+.discover__img {
+    transition: var(--img-transition);
+}
+
+.discover__img:hover {
+    transform: var(--img-scale);
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+
+/* Review */
+.review .review-slider {
     padding-bottom: 2rem;
 }
 
-.review .box{
+.review .box {
     padding: 2rem;
     text-align: center;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
 }
 
-.review .box img{
+.review .box img {
     height: 13rem;
     width: 13rem;
     border-radius: 50%;
@@ -436,62 +569,73 @@ header .search-bar-container label:hover{
     margin-bottom: 1rem;
 }
 
-.review .box h3{
+.review .box h3 {
     color: #333;
     font-size: 2.5rem;
 }
 
-.review .box p{
+.review .box p {
     color: #666;
     font-size: 1.5rem;
     padding: 1rem 0;
 }
 
-.review .box .stars i{
+.review .box .stars i {
     color: var(--orange);
     font-size: 1.7rem;
 }
 
-.footer{
+#upArrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.footer {
     background: #333;
 }
 
-.footer .box-container{
+.footer .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.footer .box-container .box{
+.footer .box-container .box {
     padding: 1rem 0;
     flex: 1 1 25rem;
 }
 
-.footer .box-container .box h3{
+.footer .box-container .box h3 {
     font-size: 2.5rem;
     padding: .7rem 0;
     color: #fff;
 }
 
-.footer .box-container .box p{
+.footer .box-container .box p {
     font-size: 1.5rem;
     padding: .7rem 0;
     color: #eee;
 }
 
-.footer .box-container .box a{
+.footer .box-container .box a {
     display: block;
     font-size: 1.5rem;
     padding: .7rem 0;
     color: #eee;
 }
 
-.footer .box-container .box a:hover{
+.footer .box-container .box a:hover {
     color: var(--orange);
     text-decoration: underline;
 }
 
-.footer .credit{
+.footer .credit {
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 1rem;
@@ -501,52 +645,54 @@ header .search-bar-container label:hover{
     border-top: .1rem solid rgba(255, 255, 255, .2);
 }
 
-.footer .credit span{
+.footer .credit span {
     color: var(--orange);
 }
 
 /* media queries */
 
-@media (max-width:1200px){
+@media (max-width:1200px) {
 
-    html{
+    html {
         font-size: 55%;
     }
 
 }
 
-@media (max-width:991px){
+@media (max-width:991px) {
 
-    header{
+    header {
         padding: 2rem;
     }
 
-    section{
+    section {
         padding: 2rem;
     }
 
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    #menu-bar{
+    #menu-bar {
         display: initial;
     }
 
-    header .navbar{
+    header .navbar {
         position: absolute;
-        top: 100%; right: 0; left: 0;
+        top: 100%;
+        right: 0;
+        left: 0;
         background: #333;
         border-top: .1rem solid rgba(255, 255, 255, .2);
         padding: 1rem 2rem;
-        clip-path: polygon(0 0, 100% 0, 100% 0 , 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    header .navbar.active{
+    header .navbar.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
-    header .navbar a{
+    header .navbar a {
         display: block;
         border-radius: .5rem;
         padding: 1.5rem;
@@ -556,14 +702,43 @@ header .search-bar-container label:hover{
 
 }
 
-@media (max-width:450px){
+@media (max-width:450px) {
 
-    html{
+    html {
         font-size: 50%;
     }
 
-    .heading span{
+    .heading span {
         font-size: 2.5rem;
     }
 
+}
+
+@media screen and (min-width: 768px) {
+
+    .discover__container,
+    .discover__container {
+        width: 610px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .discover__card {
+        width: 237px;
+    }
+
+    .discover__container {
+        width: 700px;
+    }
+
+    .discover__data {
+        left: 1.5rem;
+        bottom: 2rem;
+    }
+
+    .discover__title {
+        font-size: var(--h2-font-size);
+    }
 }
