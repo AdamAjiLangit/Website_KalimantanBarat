@@ -51,3 +51,18 @@ var swiper = new Swiper(".review-slider", {
         },
     },
 });
+
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+// Tampilkan tombol Up Arrow saat halaman di-scroll ke bawah
+window.onscroll = function() {
+    var upArrowButton = document.getElementById("upArrow");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        upArrowButton.style.display = "block";
+    } else {
+        upArrowButton.style.display = "none";
+    }
+};
