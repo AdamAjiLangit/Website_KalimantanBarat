@@ -14,6 +14,8 @@
     <!-- custom css file link -->
     <link rel="stylesheet" href="sosial.css">
 
+    <link rel="stylesheet" href="/swiper-bundle.css">
+
 </head>
 <body>
    
@@ -47,6 +49,112 @@
 
 <!-- header section ends -->
 
+<!-- Home -->
+
+<section class="home" id="home">
+    <img src="/images/background.jpg" alt="" class="home__img">
+
+    <div class="home__container container grid">
+        <div class="home__data">
+            <div class="home__card">
+                <span class="home__data-subtitle">The beauty of Kalimantan Barat</span>
+                <h1 class="home__data-title">Explore The <b>Beautiful <br> Kalimantan Barat</b></h1>
+                <a href="#about" class="btn">Explore</a>
+            </div>
+            
+
+        </div>
+
+        <div class="home__social">
+            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                <i class="ri-facebook-box-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                <i class="ri-twitter-fill"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Home end -->
+
+<!--==================== ABOUT ====================-->
+<section class="about section" id="about">
+    <div class="about__container container grid">
+        <div class="about__data">
+            <h1 class="section__title about__title">Kesenian <br> Kalimantan Barat</h1>
+            <p class="about__description">Tempat yang indah & beragam, Jelajahi macam-macam Kesenian dan Adat dari Kalimantan Barat
+            </p>
+            <a href="#" class="btn">Show More</a>
+        </div>
+
+        <div class="about__img">
+            <div class="about__img-overlay">
+                <img src="/images/gunung_palung_national.jpg" alt="" class="about__img-one">
+            </div>
+
+            <div class="about__img-overlay">
+                <img src="/images/air_terjun_pancur_aji.jpg" alt="" class="about__img-two">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--==================== DISCOVER start ====================-->
+<section class="discover section" id="discover">
+
+    <h1 class="heading">
+        <span>a</span>
+        <span>d</span>
+        <span>a</span>
+        <span>t</span>
+    </h1>
+
+    <div class="discover__container container swiper-container">
+        <div class="swiper-wrapper">
+            <!--==================== DISCOVER 1 ====================-->
+            <div class="discover__card swiper-slide">
+                <img src="/images/discover1.jpg" alt="" class="discover__img">
+                <div class="discover__data">
+                    <h2 class="discover__title">Bali</h2>
+                    <span class="discover__description">24 tours available</span>
+                </div>
+            </div>
+
+            <!--==================== DISCOVER 2 ====================-->
+            <div class="discover__card swiper-slide">
+                <img src="/images/discover2.jpg" alt="" class="discover__img">
+                <div class="discover__data">
+                    <h2 class="discover__title">Hawaii</h2>
+                    <span class="discover__description">15 tours available</span>
+                </div>
+            </div>
+
+            <!--==================== DISCOVER 3 ====================-->
+            <div class="discover__card swiper-slide">
+                <img src="/images/discover3.jpg" alt="" class="discover__img">
+                <div class="discover__data">
+                    <h2 class="discover__title">Hvar</h2>
+                    <span class="discover__description">18 tours available</span>
+                </div>
+            </div>
+
+            <!--==================== DISCOVER 4 ====================-->
+            <div class="discover__card swiper-slide">
+                <img src="/images/discover4.jpg" alt="" class="discover__img">
+                <div class="discover__data">
+                    <h2 class="discover__title">Whitehaven</h2>
+                    <span class="discover__description">32 tours available</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--==================== DISCOVER end ====================-->
+
 <!-- login form container -->
 
 <div class="login-form-container">
@@ -67,6 +175,7 @@
 </div>
 
 
+<img id="upArrow" src="../images/upArrow.jpg" alt="" srcset="" onclick="scrollToTop()">
 
 <!-- footer section -->
 
@@ -108,6 +217,8 @@
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script src="/swiper-bundle.min.js"></script>
 
 <!-- custom js file link -->
 <script src="sosial.js"></script>

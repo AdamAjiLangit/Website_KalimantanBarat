@@ -32,21 +32,30 @@ formClose.addEventListener('click', () =>{
     loginForm.classList.remove('active');
 });
 
-var swiper = new Swiper(".review-slider", {
-    spaceBetween: 20,
-    loop:true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction:false,
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: false,
+    centerSlide: 'false',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-        640: {
+        0: {
             slidesPerView: 1,
         },
-        768: {
+        520: {
             slidesPerView: 2,
         },
-        1024: {
+        950: {
             slidesPerView: 3,
         },
     },

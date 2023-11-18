@@ -28,11 +28,11 @@
     --title-font: 'Raleway', sans-serif;
     --biggest-font-size: 2.5rem;
     --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
+    --h2-font-size: 2.25rem;
+    --h3-font-size: 0.25rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    --smaller-font-size: 2.0rem;
 
     /*========== Font weight ==========*/
     --font-medium: 500;
@@ -58,6 +58,18 @@
     --img-scale: scale(1.1);
 }
 
+@media screen and (min-width: 968px) {
+    :root {
+        --biggest-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 0.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
 * {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -68,6 +80,14 @@
     border: none;
     text-decoration: none;
     transition: all .2s linear;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -136,6 +156,7 @@ section {
     border: .2rem solid var(--orange);
     cursor: pointer;
     font-size: 1.7rem;
+    border-radius: 7px;
 }
 
 .btn:hover {
@@ -225,6 +246,92 @@ header .search-bar-container label {
 header .search-bar-container label:hover {
     color: var(--orange);
 }
+
+.slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: #FFF;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--orange);
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--orange);
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--orange);
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 35px;
+}
+
 
 .login-form-container {
     position: fixed;
@@ -422,6 +529,12 @@ header .search-bar-container label:hover {
     color: var(--orange);
 }
 
+.stars {
+    margin-top: 5px;
+    font-size: 1.7rem;
+    color: var(--orange);
+}
+
 .services .box-container {
     display: flex;
     flex-wrap: wrap;
@@ -506,7 +619,6 @@ header .search-bar-container label:hover {
 }
 
 /*=============== DISCOVER ===============*/
-
 .discover__card {
     position: relative;
     width: 200px;
@@ -526,7 +638,8 @@ header .search-bar-container label:hover {
 
 .discover__title {
     color: white;
-    font-size: var(--h3-font-size);
+    display: block;
+    font-size: var(--h2-font-size);
     margin-bottom: var(--mb-0-25);
 }
 
@@ -537,6 +650,8 @@ header .search-bar-container label:hover {
 }
 
 .discover__img {
+    width: 100%;
+    height: 100%;
     transition: var(--img-transition);
 }
 
@@ -550,39 +665,9 @@ header .search-bar-container label:hover {
 }
 
 /* Review */
-.review .review-slider {
-    padding-bottom: 2rem;
-}
-
-.review .box {
-    padding: 2rem;
-    text-align: center;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
-    border-radius: .5rem;
-}
-
-.review .box img {
-    height: 13rem;
-    width: 13rem;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-}
-
-.review .box h3 {
-    color: #333;
-    font-size: 2.5rem;
-}
-
-.review .box p {
-    color: #666;
-    font-size: 1.5rem;
-    padding: 1rem 0;
-}
-
-.review .box .stars i {
-    color: var(--orange);
-    font-size: 1.7rem;
+.review {
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 #upArrow {
@@ -649,18 +734,102 @@ header .search-bar-container label:hover {
     color: var(--orange);
 }
 
-/* media queries */
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: var(--first-color);
+    padding: .5rem;
+    display: flex;
+    opacity: .9;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
 
-@media (max-width:1200px) {
+.scrollup:hover {
+    background-color: var(--first-color-alt);
+    opacity: 1;
+}
 
+.scrollup__icon {
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
+/* Show scroll */
+.show-scroll {
+    bottom: 5rem;
+}
+
+/* Existing styles... */
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding: 7rem 0 2rem;
+    }
+
+    .discover__container {
+        width: 610px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .discover__container {
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 100%;
+        max-width: 968px;
+        /* or any other suitable max-width */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .discover__card {
+        width: 100%;
+        /* or a percentage value */
+        max-width: 300px;
+        /* or any other suitable max-width */
+    }
+
+    .discover__container {
+        width: 100%;
+        /* or a percentage value */
+        max-width: 700px;
+        /* or any other suitable max-width */
+    }
+
+    .discover__data {
+        left: 1.5rem;
+        bottom: 2rem;
+    }
+
+    .discover__title {
+        font-size: var(--h2-font-size);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
     html {
         font-size: 55%;
     }
-
 }
 
-@media (max-width:991px) {
-
+@media screen and (max-width: 991px) {
     header {
         padding: 2rem;
     }
@@ -668,10 +837,16 @@ header .search-bar-container label:hover {
     section {
         padding: 2rem;
     }
-
 }
 
-@media (max-width:768px) {
+@media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+
+    .swiper-navBtn {
+        display: none;
+    }
 
     #menu-bar {
         display: initial;
@@ -699,11 +874,15 @@ header .search-bar-container label:hover {
         margin: 1.5rem 0;
         background: #222;
     }
-
 }
 
-@media (max-width:450px) {
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1024px;
+    }
+}
 
+@media screen and (max-width: 450px) {
     html {
         font-size: 50%;
     }
@@ -711,34 +890,6 @@ header .search-bar-container label:hover {
     .heading span {
         font-size: 2.5rem;
     }
-
 }
 
-@media screen and (min-width: 768px) {
-
-    .discover__container,
-    .discover__container {
-        width: 610px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .discover__card {
-        width: 237px;
-    }
-
-    .discover__container {
-        width: 700px;
-    }
-
-    .discover__data {
-        left: 1.5rem;
-        bottom: 2rem;
-    }
-
-    .discover__title {
-        font-size: var(--h2-font-size);
-    }
-}
+/* End of Media Queries */

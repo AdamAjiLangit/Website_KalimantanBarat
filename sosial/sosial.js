@@ -32,22 +32,22 @@ formClose.addEventListener('click', () =>{
     loginForm.classList.remove('active');
 });
 
-var swiper = new Swiper(".review-slider", {
-    spaceBetween: 20,
-    loop:true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction:false,
+/*==================== SWIPER DISCOVER ====================*/
+let swiper = new Swiper(".discover__container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 32,
+    coverflowEffect: {
+        rotate: 0,
     },
-    breakpoints: {
-        640: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
-    },
-});
+})
+
+
+//UpArrow
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
