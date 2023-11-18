@@ -42,84 +42,36 @@ videoBtn.forEach(btn => {
     });
 });
 
-// var swiper = new Swiper(".review-slider", {
-//     spaceBetween: 20,
-//     loop: true,
-//     autoplay: {
-//         delay: 2500,
-//         disableOnInteraction: false,
-//     },
-//     breakpoints: {
-//         640: {
-//             slidesPerView: 1,
-//         },
-//         768: {
-//             slidesPerView: 2,
-//         },
-//         1024: {
-//             slidesPerView: 3,
-//         },
-//     },
-// });
-
 /*==================== SWIPER DISCOVER ====================*/
-let swiper = new Swiper(".discover__container", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    loop: true,
-    spaceBetween: 32,
-    coverflowEffect: {
-        rotate: 0,
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: false,
+    centerSlide: 'false',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
     },
-})
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+});
 
-/*==================== SCROLL REVEAL ANIMATION ====================*/
-const sr = ScrollReveal({
-    distance: '60px',
-    duration: 2800,
-    // reset: true,
-})
-
-
-sr.reveal(`.home__data, .home__social-link, .home__info,
-           .discover__container,
-           .experience__data, .experience__overlay,
-           .place__card,
-           .sponsor__content,
-           .footer__data, .footer__rights`, {
-    origin: 'top',
-    interval: 100,
-})
-
-sr.reveal(`.about__data, 
-           .video__description,
-           .subscribe__description`, {
-    origin: 'left',
-})
-
-sr.reveal(`.about__img-overlay, 
-           .video__content,
-           .subscribe__form`, {
-    origin: 'right',
-    interval: 100,
-})
-
-// // Swiper //
-// var swiper = new Swiper(".slide-content", {
-//     slidesPerView: 1,
-//     spaceBetween: 30,
-//     loop: true,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//   });
 
 //UpArrow
 function scrollToTop() {
