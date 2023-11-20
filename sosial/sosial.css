@@ -653,8 +653,8 @@ header .search-bar-container label:hover {
 }
 
 .discover__img {
-    width: 100%;
-    height: 100%;
+    width: 50vh;
+    height: 60vh;
     transition: var(--img-transition);
 }
 
