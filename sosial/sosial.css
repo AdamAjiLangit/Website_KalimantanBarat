@@ -604,7 +604,7 @@ header .search-bar-container label:hover {
 }
 
 .about__img-two {
-    width: 180px;
+    width: 150px;
 }
 
 .about__img-one,
@@ -626,6 +626,7 @@ header .search-bar-container label:hover {
     position: relative;
     width: 200px;
     overflow: var(--img-hidden);
+    border-radius: 20px;
 }
 
 .discover__data {
@@ -653,7 +654,7 @@ header .search-bar-container label:hover {
 }
 
 .discover__img {
-    width: 50vh;
+
     height: 60vh;
     transition: var(--img-transition);
 }

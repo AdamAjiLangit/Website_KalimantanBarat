@@ -17,6 +17,7 @@
     --hue-color: 190;
 
     /* HSL color mode */
+    --grey: #F4F4F4;
     --first-color: hsl(var(--hue-color), 64%, 22%);
     --first-color-second: hsl(var(--hue-color), 64%, 22%);
     --first-color-alt: hsl(var(--hue-color), 64%, 15%);
@@ -472,7 +473,6 @@ header .search-bar-container label:hover {
     padding: .5rem 0;
 }
 
-
 .services .box-container {
     display: flex;
     flex-wrap: wrap;
@@ -521,7 +521,7 @@ header .search-bar-container label:hover {
 
 .card {
     border-radius: 25px;
-    background-color: #FFF;
+    background-color: var(--grey);
 }
 
 .image-content,
@@ -561,7 +561,7 @@ header .search-bar-container label:hover {
 
 .overlay::after {
     border-radius: 0 25px 0 0;
-    background-color: #FFF;
+    background-color: var(--grey);
 }
 
 .card-image {
@@ -709,7 +709,7 @@ header .search-bar-container label:hover {
 @media (max-width:500px) {
     .home__container {
         position: relative;
-        height: calc(7vh - var(--header-height));
+        height: calc(12vh - var(--header-height));
         align-content: center;
         row-gap: 3rem;
         text-align: center;

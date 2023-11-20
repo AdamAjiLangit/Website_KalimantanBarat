@@ -1,45 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
-:root{
-    --orange:#ffa500;
+:root {
+    --orange: #ffa500;
     --black: #333;
     --light-color: #777;
-    --border: .1rem solid rgba(0,0,0,.2);
-    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --border: .1rem solid rgba(0, 0, 0, .2);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
-*{
+* {
     font-family: 'Nunito', sans-serif;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-transform: capitalize;
-    outline: none; border: none;
+    outline: none;
+    border: none;
     text-decoration: none;
     transition: all .2s linear;
 }
 
-*::selection{
+*::selection {
     background: var(--orange);
     color: #fff;
 }
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 6rem;
     scroll-behavior: smooth;
 }
 
-section{
+section {
     padding: 2rem 9%;
 }
 
-.heading{
+.heading {
     text-align: center;
     padding: 2.5rem 0;
 }
 
-.heading span{
+.heading span {
     font-size: 3.5rem;
     background: rgba(255, 165, 0, .2);
     color: var(--orange);
@@ -47,11 +49,11 @@ section{
     padding: .2rem 1rem;
 }
 
-.heading span.space{
+.heading span.space {
     background: none;
 }
 
-.btn{
+.btn {
     display: inline-block;
     margin-top: 1rem;
     background: var(--orange);
@@ -60,16 +62,19 @@ section{
     border: .2rem solid var(--orange);
     cursor: pointer;
     font-size: 1.7rem;
+    border-radius: 7px;
 }
 
-.btn:hover{
+.btn:hover {
     background: rgba(255, 165, 0, .2);
     color: var(--orange);
 }
 
-header{
+header {
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     background: #333;
     z-index: 1000;
     display: flex;
@@ -78,41 +83,43 @@ header{
     padding: 2rem 9%;
 }
 
-header .logo{
+header .logo {
     font-size: 2.5rem;
     font-weight: bolder;
     color: #fff;
     text-transform: uppercase;
 }
 
-header .logo span{
+header .logo span {
     color: var(--orange);
 }
 
-header .navbar a{
+header .navbar a {
     color: #fff;
     font-size: 2rem;
     margin: 0 .8rem;
 }
 
-header .navbar a:hover{
+header .navbar a:hover {
     color: var(--orange);
 }
 
-header .icons i{
+header .icons i {
     font-size: 2.5rem;
     color: #fff;
     cursor: pointer;
     margin-right: 2rem;
 }
 
-header .icons i:hover{
+header .icons i:hover {
     color: var(--orange);
 }
 
-header .search-bar-container{
+header .search-bar-container {
     position: absolute;
-    top: 100%; left: 0; right: 0;
+    top: 100%;
+    left: 0;
+    right: 0;
     padding: 1.5rem 2rem;
     background: #333;
     border-top: .1rem solid rgba(255, 255, 255, .2);
@@ -122,11 +129,11 @@ header .search-bar-container{
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
-header .search-bar-container.active{
+header .search-bar-container.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-header .search-bar-container #search-bar{
+header .search-bar-container #search-bar {
     width: 100%;
     padding: 1rem;
     text-transform: none;
@@ -135,20 +142,21 @@ header .search-bar-container #search-bar{
     border-radius: .5rem;
 }
 
-header .search-bar-container label{
+header .search-bar-container label {
     color: #fff;
     cursor: pointer;
     font-size: 3rem;
     margin-left: 1.5rem;
 }
 
-header .search-bar-container label:hover{
+header .search-bar-container label:hover {
     color: var(--orange);
 }
 
-.login-form-container{
+.login-form-container {
     position: fixed;
-    top: -120%; left: 0;
+    top: -120%;
+    left: 0;
     z-index: 10000;
     min-height: 100vh;
     width: 100%;
@@ -158,11 +166,11 @@ header .search-bar-container label:hover{
     justify-content: center;
 }
 
-.login-form-container.active{
+.login-form-container.active {
     top: 0;
 }
 
-.login-form-container form{
+.login-form-container form {
     margin: 2rem;
     padding: 1.5rem 2rem;
     border-radius: .5rem;
@@ -170,7 +178,7 @@ header .search-bar-container label:hover{
     width: 50rem;
 }
 
-.login-form-container form h3{
+.login-form-container form h3 {
     font-size: 3rem;
     color: #444;
     text-transform: uppercase;
@@ -178,7 +186,7 @@ header .search-bar-container label:hover{
     padding: 1rem 0;
 }
 
-.login-form-container form .box{
+.login-form-container form .box {
     width: 100%;
     padding: 1rem;
     font-size: 1.7rem;
@@ -188,98 +196,359 @@ header .search-bar-container label:hover{
     text-transform: none;
 }
 
-.login-form-container form .box:focus{
+.login-form-container form .box:focus {
     border-color: var(--orange);
 }
 
-.login-form-container form #remember{
+.login-form-container form #remember {
     margin: 2rem 0;
 }
 
-.login-form-container form label{
+.login-form-container form label {
     font-size: 1.5rem;
 }
 
-.login-form-container form .btn{
+.login-form-container form .btn {
     display: block;
     width: 100%;
 }
 
-.login-form-container form p{
+.login-form-container form p {
     padding: .5rem 0;
     font-size: 1.5rem;
     color: #666;
 }
 
-.login-form-container form p a{
+.login-form-container form p a {
     color: var(--orange);
 }
 
-.login-form-container form p a:hover{
+.login-form-container form p a:hover {
     color: #333;
     text-decoration: underline;
 }
 
-.login-form-container #form-close{
+.login-form-container #form-close {
     position: absolute;
-    top: 2rem; right: 3rem;
+    top: 2rem;
+    right: 3rem;
     font-size: 5rem;
     color: #fff;
     cursor: pointer;
 }
 
-#menu-bar{
-     color: #fff;
-     border: .1rem solid #fff;
-     border-radius: .5rem;
-     font-size: 3rem;
-     padding: .5rem 1.2rem;
-     cursor: pointer;
-     display: none;
+#menu-bar {
+    color: #fff;
+    border: .1rem solid #fff;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.banner {
+    min-height: 80vh;
+    background: url(/images/backgroundkesenian.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    padding-top: 8rem;
+}
+
+.banner .content {
+    text-align: center;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 3rem;
+    max-width: 50rem;
+}
+
+.banner .content h3 {
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.banner .content p {
+    font-size: 1.7rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 1.5rem;
+    background: #eee;
+}
+
+.container .posts-container .post {
+    width: 100%;
+    padding: 2rem;
+    background: #fff;
+    border: var(--border);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .posts-container .post .image {
+    height: 40rem;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.container .posts-container .post .date {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+
+.container .posts-container .post .title {
+    padding-top: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.container .posts-container .post .text {
+    color: var(--light-color);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding: 1rem 0;
+}
+
+.container .posts-container .links {
+    border-top: var(--border);
+    margin-top: .5rem;
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.container .posts-container .stars i {
+    margin-top: 9px;
+    color: var(--orange);
+    font-size: 1.7rem;
+}
+
+.container .posts-container .links .user {
+    margin-right: auto;
+}
+
+.container .posts-container .links .icon {
+    padding-right: 1rem;
+}
+
+.container .posts-container .links a {
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.container .posts-container .links a i {
+    padding-right: .2rem;
+    color: var(--black);
+}
+
+.container .posts-container .links a:hover {
+    color: var(--orange);
+}
+
+.container .posts-container .links a:hover i {
+    color: var(--orange);
+}
+
+.container .sidebar .box {
+    border: var(--border);
+    border-radius: .5rem;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.container .sidebar .box .title {
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--black);
+    text-transform: capitalize;
+}
+
+.container .sidebar .box .about {
+    text-align: center;
+    padding: 1rem 1.5rem;
+}
+
+.container .sidebar .box .about img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem 0;
+}
+
+.container .sidebar .box .about h3 {
+    color: var(--orange);
+    font-size: 2rem;
+}
+
+.container .sidebar .box .about p {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+.container .sidebar .box .about .follow {
+    padding: 1rem 0;
+}
+
+.container .sidebar .box .about .follow a {
+    height: 4rem;
+    line-height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: var(--black);
+    color: #fff;
+    font-size: 1.7rem;
+    margin: 0 .1rem;
+}
+
+.container .sidebar .box .about .follow a:hover {
+    background: var(--orange);
+}
+
+.container .sidebar .box .category {
+    padding: 1rem 1.5rem;
+}
+
+.container .sidebar .box .category a {
+    padding: .4rem 0;
+    font-size: 1.5rem;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .sidebar .box .category a span {
+    background: var(--light-color);
+    color: #fff;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.container .sidebar .box .category a:hover {
+    color: var(--orange);
+}
+
+.container .sidebar .box .category a:hover span {
+    background-color: var(--orange);
+}
+
+.container .sidebar .box .p-post {
+    padding: 1rem 2rem;
+}
+
+.container .sidebar .box .p-post a {
+    padding: 1rem 0;
+    display: block;
+}
+
+.container .sidebar .box .p-post a h3 {
+    color: var(--black);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.container .sidebar .box .p-post a span {
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.container .sidebar .box .p-post a span i {
+    padding-right: .2rem;
+}
+
+.container .sidebar .box .p-post a:hover h3 {
+    color: var(--orange);
+}
+
+.container .sidebar .box .tags {
+    padding: 1rem;
+}
+
+.container .sidebar .box .tags a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    border-radius: .5rem;
+    border: var(--border);
+    margin: .5rem;
+}
+
+.container .sidebar .box .tags a:hover {
+    background: var(--black);
+    color: #fff;
 }
 
 
+#upArrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
 
-.footer{
+
+.footer {
     background: #333;
 }
 
-.footer .box-container{
+.footer .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.footer .box-container .box{
+.footer .box-container .box {
     padding: 1rem 0;
     flex: 1 1 25rem;
 }
 
-.footer .box-container .box h3{
+.footer .box-container .box h3 {
     font-size: 2.5rem;
     padding: .7rem 0;
     color: #fff;
 }
 
-.footer .box-container .box p{
+.footer .box-container .box p {
     font-size: 1.5rem;
     padding: .7rem 0;
     color: #eee;
 }
 
-.footer .box-container .box a{
+.footer .box-container .box a {
     display: block;
     font-size: 1.5rem;
     padding: .7rem 0;
     color: #eee;
 }
 
-.footer .box-container .box a:hover{
+.footer .box-container .box a:hover {
     color: var(--orange);
     text-decoration: underline;
 }
 
-.footer .credit{
+.footer .credit {
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 1rem;
@@ -289,52 +558,62 @@ header .search-bar-container label:hover{
     border-top: .1rem solid rgba(255, 255, 255, .2);
 }
 
-.footer .credit span{
+.footer .credit span {
     color: var(--orange);
 }
 
 /* media queries */
 
-@media (max-width:1200px){
+@media (max-width:1200px) {
 
-    html{
+    html {
         font-size: 55%;
     }
 
 }
 
-@media (max-width:991px){
+@media (max-width:991px) {
 
-    header{
+    html {
+        font-size: 55%;
+    }
+
+    header {
         padding: 2rem;
     }
 
-    section{
+    section {
         padding: 2rem;
+    }
+
+    .container {
+        grid-template-columns: 2fr 1fr;
     }
 
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    #menu-bar{
+    #menu-bar {
         display: initial;
     }
 
-    header .navbar{
+    header .navbar {
         position: absolute;
-        top: 100%; right: 0; left: 0;
+        top: 100%;
+        right: 0;
+        left: 0;
         background: #333;
         border-top: .1rem solid rgba(255, 255, 255, .2);
         padding: 1rem 2rem;
-        clip-path: polygon(0 0, 100% 0, 100% 0 , 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    header .navbar.active{
+    header .navbar.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
-    header .navbar a{
+    header .navbar a {
         display: block;
         border-radius: .5rem;
         padding: 1.5rem;
@@ -342,16 +621,27 @@ header .search-bar-container label:hover{
         background: #222;
     }
 
+    .container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .container .posts-container .post .image {
+        height: 30rem;
+    }
+
+    .footer {
+        flex-flow: column;
+        text-align: center;
+    }
+
 }
 
-@media (max-width:450px){
+@media (max-width:450px) {
 
-    html{
+    html {
         font-size: 50%;
     }
 
-    .heading span{
-        font-size: 2.5rem;
-    }
-
 }
+

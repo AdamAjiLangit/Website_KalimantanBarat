@@ -35,7 +35,7 @@ formClose.addEventListener('click', () =>{
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
-    loop: false,
+    loop: true,
     centerSlide: 'false',
     fade: 'true',
     grabCursor: 'true',
