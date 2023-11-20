@@ -249,7 +249,7 @@ header .search-bar-container label:hover {
 
 .banner {
     min-height: 80vh;
-    background: url(/images/banner.png) no-repeat;
+    background: url(/images/backgroundfood.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     display: grid;

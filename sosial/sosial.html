@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,218 +11,209 @@
 
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
+
     <!-- custom css file link -->
     <link rel="stylesheet" href="sosial.css">
 
     <link rel="stylesheet" href="/swiper-bundle.css">
 
 </head>
+
 <body>
-   
-<!-- header section starts -->
 
-<header>
+    <!-- header section starts -->
 
-     <div id="menu-bar" class="fas fa-bars"></div>
+    <header>
 
-    <a href="#" class="logo"><span>Jelajah</span>Kalbar</a>
+        <div id="menu-bar" class="fas fa-bars"></div>
 
-    <nav class="navbar">
-        <a href="../index.html">Beranda</a>
-        <a href="../history/history.html">History</a>
-        <a href="../ekonomi/ekonomi.html">Ekonomi</a>
-        <a href="../wisata/wisata.html">Wisata</a>
-        <a href="../kuliner/kuliner.html">Kuliner</a>
-    </nav>
+        <a href="#" class="logo"><span>Jelajah</span>Kalbar</a>
 
-    <div class="icons">
-        <i class="fas fa-search" id="search-btn"></i>
-        <i class="fas fa-user" id="login-btn"></i>
-    </div>
-
-    <form action="" class="search-bar-container">
-        <input type="search" id="search-bar" placeholder="search here...">
-        <label for="search-bar" class="fas fa-search"></label>
-    </form>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- Home -->
-
-<section class="home" id="home">
-    <img src="/images/background.jpg" alt="" class="home__img">
-
-    <div class="home__container container grid">
-        <div class="home__data">
-            <div class="home__card">
-                <span class="home__data-subtitle">The beauty of Kalimantan Barat</span>
-                <h1 class="home__data-title">Explore The <b>Beautiful <br> Kalimantan Barat</b></h1>
-                <a href="#about" class="btn">Explore</a>
-            </div>
-            
-
-        </div>
-
-        <div class="home__social">
-            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                <i class="ri-facebook-box-fill"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                <i class="ri-instagram-fill"></i>
-            </a>
-            <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                <i class="ri-twitter-fill"></i>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- Home end -->
-
-<!--==================== ABOUT ====================-->
-<section class="about section" id="about">
-    <div class="about__container container grid">
-        <div class="about__data">
-            <h1 class="section__title about__title">Kesenian <br> Kalimantan Barat</h1>
-            <p class="about__description">Tempat yang indah & beragam, Jelajahi macam-macam Kesenian dan Adat dari Kalimantan Barat
-            </p>
-            <a href="#" class="btn">Show More</a>
-        </div>
-
-        <div class="about__img">
-            <div class="about__img-overlay">
-                <img src="/images/gunung_palung_national.jpg" alt="" class="about__img-one">
-            </div>
-
-            <div class="about__img-overlay">
-                <img src="/images/air_terjun_pancur_aji.jpg" alt="" class="about__img-two">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--==================== DISCOVER start ====================-->
-<section class="discover section" id="discover">
-
-    <h1 class="heading">
-        <span>a</span>
-        <span>d</span>
-        <span>a</span>
-        <span>t</span>
-    </h1>
-
-    <div class="discover__container container swiper-container">
-        <div class="swiper-wrapper">
-            <!--==================== DISCOVER 1 ====================-->
-            <div class="discover__card swiper-slide">
-                <img src="/images/discover1.jpg" alt="" class="discover__img">
-                <div class="discover__data">
-                    <h2 class="discover__title">Bali</h2>
-                    <span class="discover__description">24 tours available</span>
-                </div>
-            </div>
-
-            <!--==================== DISCOVER 2 ====================-->
-            <div class="discover__card swiper-slide">
-                <img src="/images/discover2.jpg" alt="" class="discover__img">
-                <div class="discover__data">
-                    <h2 class="discover__title">Hawaii</h2>
-                    <span class="discover__description">15 tours available</span>
-                </div>
-            </div>
-
-            <!--==================== DISCOVER 3 ====================-->
-            <div class="discover__card swiper-slide">
-                <img src="/images/discover3.jpg" alt="" class="discover__img">
-                <div class="discover__data">
-                    <h2 class="discover__title">Hvar</h2>
-                    <span class="discover__description">18 tours available</span>
-                </div>
-            </div>
-
-            <!--==================== DISCOVER 4 ====================-->
-            <div class="discover__card swiper-slide">
-                <img src="/images/discover4.jpg" alt="" class="discover__img">
-                <div class="discover__data">
-                    <h2 class="discover__title">Whitehaven</h2>
-                    <span class="discover__description">32 tours available</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--==================== DISCOVER end ====================-->
-
-<!-- login form container -->
-
-<div class="login-form-container">
-
-    <i class="fas fa-times" id="form-close"></i>
-
-    <form action="">
-        <h3>login</h3>
-        <input type="email" class="box" placeholder="enter your email">
-        <input type="password" class="box" placeholder="enter your password">
-        <input type="submit" value="login now" class="btn">
-        <input type="checkbox" id="remember">
-        <label for="remember">remember me</label>
-        <p>forget password? <a href="../changesPass/changePass.html">click here</a></p>
-        <p>don't have and account? <a href="../register/register.html">register now</a></p>
-    </form>
-
-</div>
-
-
-<img id="upArrow" src="../images/upArrow.jpg" alt="" srcset="" onclick="scrollToTop()">
-
-<!-- footer section -->
-
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>about us</h3>
-            <p>Kami membuat website ini sebagai bagian dari tugas PAS PKN kami. Tujuan kami adalah memperkenalkan Kalimantan Barat kepada dunia.</p>
-        </div>
-        <div class="box">
-            <h3>branch locations</h3>
-            <a href="https://g.co/kgs/5ujXtQ">Pontianak, Kalimantan Barat</a>
-            <a href="https://g.co/kgs/6sXgLm">Singkawang, Kalimantan Barat</a>
-            <a href="https://g.co/kgs/wmR6Jt">Sintang, Kalimantan Barat</a>
-            <a href="https://g.co/kgs/SFyyuP">Ketapang, Kalimantan Barat</a>
-        </div>
-        <div class="box">
-            <h3>quick links</h3>
+        <nav class="navbar">
             <a href="../index.html">Beranda</a>
             <a href="../history/history.html">History</a>
             <a href="../ekonomi/ekonomi.html">Ekonomi</a>
             <a href="../wisata/wisata.html">Wisata</a>
             <a href="../kuliner/kuliner.html">Kuliner</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
         </div>
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="https://www.facebook.com/Kalbar.Berkibar/">facebook</a>
-            <a href="https://www.instagram.com/kalbar_info/">instagram</a>
-            <a href="https://www.youtube.com/channel/UCpUcQKq-fUauRezqZTvrcJA">youtube</a>
-            <a href="https://www.linkedin.com/in/kalbaronline/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=id">linkedin</a>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- Home -->
+
+    <section class="home" id="home">
+        <img src="/images/background.jpg" alt="" class="home__img">
+
+        <div class="home__container container grid">
+            <div class="home__data">
+                <div class="home__card">
+                    <span class="home__data-subtitle">The beauty of Kalimantan Barat</span>
+                    <h1 class="home__data-title">Explore The <b>Beautiful <br> Kalimantan Barat</b></h1>
+                    <a href="#about" class="btn">Explore</a>
+                </div>
+
         </div>
+    </section>
+
+    <!-- Home end -->
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+        <div class="about__container container grid">
+            <div class="about__data">
+                <h1 class="section__title about__title">Kesenian <br> Kalimantan Barat</h1>
+                <p class="about__description">Tempat yang indah & beragam, Jelajahi macam-macam Kesenian dan Adat dari
+                    Kalimantan Barat
+                </p>
+                <a href="#" class="btn">Show More</a>
+            </div>
+
+            <div class="about__img">
+                <div class="about__img-overlay">
+                    <img src="/images/gunung_palung_national.jpg" alt="" class="about__img-one">
+                </div>
+
+                <div class="about__img-overlay">
+                    <img src="/images/air_terjun_pancur_aji.jpg" alt="" class="about__img-two">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== DISCOVER start ====================-->
+    <section class="discover section" id="discover">
+
+        <h1 class="heading">
+            <span>a</span>
+            <span>d</span>
+            <span>a</span>
+            <span>t</span>
+        </h1>
+
+        <div class="discover__container container swiper-container">
+            <div class="swiper-wrapper">
+                <!--==================== DISCOVER  1 ====================-->
+                <div class="discover__card swiper-slide">
+                    <img src="/images/King-Bibinge.jpg" alt="" class="discover__img">
+                    <div class="discover__data">
+                        <h2 class="discover__title">King Bibinge</h2>
+                        <span class="discover__description"> pakaian adat pada bagian wanita</span>
+                    </div>
+                </div>
+
+                <!--==================== DISCOVER 2 ====================-->
+                <div class="discover__card swiper-slide">
+                    <img src="/images/King-baba.jpg" alt="" class="discover__img" >
+                    <div class="discover__data">
+                        <h2 class="discover__title">King Baba</h2>
+                        <span class="discover__description">15 tours available</span>
+                    </div>
+                </div>
+
+                <!--==================== DISCOVER 3 ====================-->
+                <div class="discover__card swiper-slide">
+                    <img src="/images/discover3.jpg" alt="" class="discover__img">
+                    <div class="discover__data">
+                        <h2 class="discover__title">Hvar</h2>
+                        <span class="discover__description">18 tours available</span>
+                    </div>
+                </div>
+
+                <!--==================== DISCOVER 4 ====================-->
+                <div class="discover__card swiper-slide">
+                    <img src="/images/discover4.jpg" alt="" class="discover__img">
+                    <div class="discover__data">
+                        <h2 class="discover__title">Whitehaven</h2>
+                        <span class="discover__description">32 tours available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==================== DISCOVER end ====================-->
+
+    <!-- login form container -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="../changesPass/changePass.html">click here</a></p>
+            <p>don't have and account? <a href="../register/register.html">register now</a></p>
+        </form>
 
     </div>
 
-    <h1 class="credit">&copy; 2023 Website Kalimantan Barat <span> JelajahKalbar </span> | all rights reserved!</h1>
 
-</section>
+    <img id="upArrow" src="../images/upArrow.jpg" alt="" srcset="" onclick="scrollToTop()">
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- footer section -->
 
-<script src="/swiper-bundle.min.js"></script>
+    <section class="footer">
 
-<!-- custom js file link -->
-<script src="sosial.js"></script>
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>Kami membuat website ini sebagai bagian dari tugas PAS PKN kami. Tujuan kami adalah memperkenalkan
+                    Kalimantan Barat kepada dunia.</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="https://g.co/kgs/5ujXtQ">Pontianak, Kalimantan Barat</a>
+                <a href="https://g.co/kgs/6sXgLm">Singkawang, Kalimantan Barat</a>
+                <a href="https://g.co/kgs/wmR6Jt">Sintang, Kalimantan Barat</a>
+                <a href="https://g.co/kgs/SFyyuP">Ketapang, Kalimantan Barat</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="../index.html">Beranda</a>
+                <a href="../history/history.html">History</a>
+                <a href="../ekonomi/ekonomi.html">Ekonomi</a>
+                <a href="../wisata/wisata.html">Wisata</a>
+                <a href="../kuliner/kuliner.html">Kuliner</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/Kalbar.Berkibar/">facebook</a>
+                <a href="https://www.instagram.com/kalbar_info/">instagram</a>
+                <a href="https://www.youtube.com/channel/UCpUcQKq-fUauRezqZTvrcJA">youtube</a>
+                <a
+                    href="https://www.linkedin.com/in/kalbaronline/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=id">linkedin</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit">&copy; 2023 Website Kalimantan Barat <span> JelajahKalbar </span> | all rights reserved!</h1>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="sosial.js"></script>
 
 </body>
+
 </html>
