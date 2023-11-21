@@ -1,21 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalimantan Barat</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="history.css">
+
 </head>
 
 <body>
+
+    <!-- header section ends -->
+
     <header>
-        <h1>Sejarah Pulau Kalimantan</h1>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>Jelajah</span>Kalbar</a>
+
+        <nav class="navbar">
+            <a href="../index.html">Beranda</a>
+            <a href="../ekonomi/ekonomi.html">Ekonomi</a>
+            <a href="../sosial/sosial.html">Sosial Budaya</a>
+            <a href="../wisata/wisata.html">Wisata</a>
+            <a href="../kuliner/kuliner.html">Kuliner</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="history.html">Sejarah</a></li>
-        </ul>
-    </nav>
+
+    <!-- header section ends -->
+
+    <!-- login form container -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="../changesPass/changePass.html">click here</a></p>
+            <p>don't have and account? <a href="../register/register.html">register now</a></p>
+        </form>
+
+    </div>
+
     <main>
+        <h1>Sejarah Pulau Kalimantan</h1>
+
         <h2>Asal Usul Nama Pulau Kalimantan</h2>
         <p>Pulau Kalimantan memperoleh namanya dari kata Sanskrit "Kalamanthana," yang berarti "pulau bercuaca terbakar." Nama ini mencerminkan iklim tropisnya yang panas dan lembab. Kata tersebut terdiri dari "kal[a]" yang berarti "masa, musim, waktu" dan
             "manthan[a]" yang berarti "mendidih, memusing, membakar."[2]</p>
@@ -28,6 +81,51 @@
 
         <p>Nama "Kalimantan" digunakan oleh Kesultanan Banjar dan kemudian diadopsi oleh pemerintah Republik Indonesia sebagai nama Provinsi Kalimantan.</p>
     </main>
+
+    <!-- footer section -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>Kami membuat website ini sebagai bagian dari tugas PAS PKN kami. Tujuan kami adalah memperkenalkan
+                    Kalimantan Barat kepada dunia.</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="https://g.co/kgs/5ujXtQ">Pontianak, Kalimantan Barat</a>
+                <a href="https://g.co/kgs/6sXgLm">Singkawang, Kalimantan Barat</a>
+                <a href="https://g.co/kgs/wmR6Jt">Sintang, Kalimantan Barat</a>
+                <a href="https://g.co/kgs/SFyyuP">Ketapang, Kalimantan Barat</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="../index.html">Beranda</a>
+                <a href="../history/history.html">History</a>
+                <a href="../ekonomi/ekonomi.html">Ekonomi</a>
+                <a href="../sosial/sosial.html">Sosial Budaya</a>
+                <a href="../kuliner/kuliner.html">Kuliner</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/Kalbar.Berkibar/">facebook</a>
+                <a href="https://www.instagram.com/kalbar_info/">instagram</a>
+                <a href="https://www.youtube.com/channel/UCpUcQKq-fUauRezqZTvrcJA">youtube</a>
+                <a
+                    href="https://www.linkedin.com/in/kalbaronline/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=id">linkedin</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit">&copy; 2023 Website Kalimantan Barat <span> JelajahKalbar </span> | all rights reserved!</h1>
+
+    </section>
+
+    <!-- custom js file link -->
+    <script src="history.js"></script>
+
 </body>
 
 </html>

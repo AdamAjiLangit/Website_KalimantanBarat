@@ -632,7 +632,6 @@ header .search-bar-container label:hover {
 
     .footer {
         flex-flow: column;
-        text-align: center;
     }
 
 }
